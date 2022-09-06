@@ -1,6 +1,7 @@
 luoti = 13.3
 naula = luoti * 32
 leiviska = naula * 20
+
 luodit_str = input('anna luodit: ')
 naulat_str = input('anna naulat: ')
 leiviskat_str = input('anna leiviskät: ')
