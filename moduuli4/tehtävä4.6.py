@@ -1,15 +1,21 @@
+import math
+
 N = 1000000
 n = 0
 toistot = 0
+
 while toistot < N:
-    #x ja y ovat liukulukuja (float)
-    #arvo x väliltä -1 ja 1
-    x = 0
-    #arvo y väliltä -1 ja 1
-    y = 0
-    #osuuko x ja y ympyrän sisälle
+    import random
+
+    x = random.uniform(-1, 1)
+    y = random.uniform(-1, 1)
+
     if (x * x + y * y < 1):
         n += 1
+        toistot += 1
 
-    pi = 4 * n / N
-print(f'Piin likiarvo on {pi}')
+    else:
+        toistot += 1
+piin_likiarvo_pisteillä = 4 * n / N
+print('Piin likiarvo pisteillä: ', piin_likiarvo_pisteillä)
+print('Piin likiarvo: ', math.pi)
