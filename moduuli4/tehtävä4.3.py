@@ -5,4 +5,4 @@ while True:
         break
     lista.append(syöte)
 print('Pienin luku: ', min(lista))
-print('Suuin luku: ', max(lista))
+print('Suurin luku: ', max(lista))
