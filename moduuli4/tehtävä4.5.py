@@ -5,7 +5,7 @@ yritykset = 0
 
 while not (tunnus == 'python' and salasana == 'rules') and yritykset < toistot:
     tunnus = input('Anna käyttäjätunnus: ')
-    salasana = input('Anna salis: ')
+    salasana = input('Anna salasana: ')
     yritykset += 1
 
 if(yritykset >= 5):
