@@ -1,8 +1,10 @@
-def erottele(luvut):
-    for l in lista1:
-        jako = l % 2
-        if jako != 0:
-            l
+def listanmuokkaus(lista):
+    for luku in lista:
+        if luku % 2 != 0:
+            lista1.remove(luku)
 
-lista1 = []
-lista2 = []
+lista1 = [1, 2, 3, 4, 5, 6, 7, 8]
+
+print(lista1)
+listanmuokkaus(lista1)
+print(lista1)
