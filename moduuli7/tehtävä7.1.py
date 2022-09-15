@@ -3,5 +3,9 @@ vuodenajat = ('talvi','talvi','kevät','kevät','kevät','kesä','kesä','kesä'
 kuukausi = int(input('Syötä kuukauden numero: '))
 vuodenaika = vuodenajat[kuukausi-1]
 
-print(f'Vuodenaika on {vuodenaika}.')
+if kuukausi < 1:
+    print('eioo')
+
+else:
+    print(f'Vuodenaika on {vuodenaika}.')
 
