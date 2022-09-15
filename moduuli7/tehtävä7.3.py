@@ -5,7 +5,7 @@ lentokentät = {'EFHK':'Helsinki-Vantaan lentoasema',
 syöte = input('Mitä haluat tehdä?(hae/lisää/lopeta): ')
 while syöte != 'lopeta':
     if syöte == 'hae':
-        haku = input('syötä icao: ')
+        haku = input('Syötä ICAO: ')
         if haku in lentokentät:
             print({lentokentät[haku]})
         else:
@@ -13,8 +13,9 @@ while syöte != 'lopeta':
         syöte = input('Mitä haluat tehdä?(hae/lisää/lopeta): ')
 
     elif syöte == 'lisää':
-        koodi = input('icao: ')
-        nimi = input('kenttä: ')
+        koodi = input('Syötä uusi ICAO: ')
+        nimi = input('Syötä uusi lentokenttä: ')
         lentokentät[koodi] = nimi
+        syöte = input('Mitä haluat tehdä?(hae/lisää/lopeta): ')
 
-        print(lentokentät)
+print(lentokentät)
