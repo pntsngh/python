@@ -18,4 +18,8 @@ while syöte != 'lopeta':
         lentokentät[koodi] = nimi
         syöte = input('Mitä haluat tehdä?(hae/lisää/lopeta): ')
 
+    else:
+        print('Virheellinen syöte.')
+        syöte = input('Mitä haluat tehdä?(hae/lisää/lopeta): ')
+
 print(lentokentät)
