@@ -2,7 +2,7 @@ import math
 
 
 def neliöhinta(säde, hinta):
-    nh = math.pi * säde**2 / 100 / hinta
+    nh = hinta / (math.pi * säde**2 / 10000)
     return nh
 
 r = float(input('säde: '))
