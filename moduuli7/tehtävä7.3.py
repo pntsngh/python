@@ -3,6 +3,7 @@ lentokentät = {'EFHK':'Helsinki-Vantaan lentoasema',
                'ENGM':'Oslon lentokenttä'}
 
 syöte = input('Mitä haluat tehdä?(hae/lisää/lopeta): ')
+
 while syöte != 'lopeta':
     if syöte == 'hae':
         haku = input('Syötä ICAO: ')
