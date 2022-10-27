@@ -35,6 +35,6 @@ for a in autot:
         for a in autot:
             a.kulje(1)
         for i in autot:
-           print(f'Auto: {i.rekkari} | Huippunopeus: {i.huippunopeus} | Nopeus: {i.nopeus} | Matka: {i.matka}')
+            print(f'Auto: {i.rekkari} | Huippunopeus: {i.huippunopeus} | Nopeus: {i.nopeus} | Matka: {i.matka}')
         tunti += 1
         print(f'Aikaa kulunut {tunti} tuntia.')
