@@ -22,18 +22,9 @@ class Auto:
 
 autot = []
 
-auto1 = Auto('ABC-1', random.randint(100, 200))
-autot.append(auto1)
-auto2 = Auto('ABC-2', random.randint(100, 200))
-autot.append(auto2)
-auto3 = Auto('ABC-3', random.randint(100, 200))
-autot.append(auto3)
-auto4 = Auto('ABC-4', random.randint(100, 200))
-autot.append(auto4)
-auto5 = Auto('ABC-5', random.randint(100, 200))
-autot.append(auto5)
-auto6 = Auto('ABC-6', random.randint(100, 200))
-autot.append(auto6)
+for i in  range(10):
+    auto = Auto(f'ABC-{i+1}', random.randint(100, 200))
+    autot.append(auto)
 
 tunti = 0
 
@@ -44,6 +35,6 @@ for a in autot:
         for a in autot:
             a.kulje(1)
         for i in autot:
-            print(f'Auto: {i.rekkari} | Huippunopeus: {i.huippunopeus} | Nopeus: {i.nopeus} | Matka: {i.matka}')
+           print(f'Auto: {i.rekkari} | Huippunopeus: {i.huippunopeus} | Nopeus: {i.nopeus} | Matka: {i.matka}')
         tunti += 1
         print(f'Aikaa kulunut {tunti} tuntia.')
