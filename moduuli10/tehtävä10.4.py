@@ -56,9 +56,11 @@ while kisa:
     tunti += 1
     if tunti % 10 == 0:
         kilpailu.tulosta_tilanne()
+        print(f'Aikaa kulunut {tunti} tuntia.')
     kilpailu.kilpailu_ohi()
     if kilpailu.kilpailu_ohi():
         kisa = False
         kilpailu.tulosta_tilanne()
+        print(f'Aikaa kulunut {tunti} tuntia.')
 
 
